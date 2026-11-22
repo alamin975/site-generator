@@ -2,6 +2,8 @@
 // alone with run() from solve.js, and writes /output/answers.json — one
 // answer per case, in the cases' order. Outside a container
 // MAKEFUN_INPUT_DIR and MAKEFUN_OUTPUT_DIR stand in for /input and /output.
+// The driver does no work of its own: all of it is solve.js's, so the
+// entry's time is the generator's time.
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
